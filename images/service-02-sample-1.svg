@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-label="Poster Design original sample 1">
+<rect width="900" height="520" fill="#f26a3d"/>
+<path d="M0 0H900V520H0Z" fill="none" stroke="#171815" stroke-width="2"/>
+<text x="42" y="42" fill="#171815" font-family="Arial,sans-serif" font-size="15" letter-spacing="3" font-weight="700">MK. / CREATIVE STUDIO</text>
+<text x="858" y="42" text-anchor="end" fill="#171815" font-family="monospace" font-size="13">DIRECTION / A</text>
+<circle cx="680" cy="210" r="125" fill="#f4f2ec"/><circle cx="680" cy="210" r="150" fill="none" stroke="#171815" stroke-width="2" opacity=".45"/><path d="M520 330 Q680 30 835 330" fill="none" stroke="#d5fb55" stroke-width="7"/>
+<g >
+<text x="48" y="150" fill="#171815" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="4">POSTER DESIGN</text>
+<text x="42" y="245" fill="#171815" font-family="Arial,sans-serif" font-size="58" font-weight="900" letter-spacing="-2">MAKE NOISE</text>
+<text x="45" y="305" fill="#f4f2ec" font-family="Arial,sans-serif" font-size="36" font-weight="900" letter-spacing="-1">MAKE IT MATTER</text>
+<path d="M45 340 H380" stroke="#171815" stroke-width="2"/>
+<text x="46" y="375" fill="#171815" font-family="monospace" font-size="14" letter-spacing="2">IDEAS / FORM / IMPACT</text>
+<text x="46" y="405" fill="#171815" font-family="monospace" font-size="12" opacity=".8">VISUAL DESIGN STUDY · 2026</text>
+</g>
+<circle cx="840" cy="465" r="24" fill="#d5fb55"/><text x="840" y="472" text-anchor="middle" fill="#f26a3d" font-family="Arial,sans-serif" font-size="19" font-weight="900">MK</text>
+<text x="42" y="485" fill="#171815" font-family="monospace" font-size="12" letter-spacing="2">MC KIM · DESIGN CONCEPT</text>
+</svg>
