@@ -1,16 +1,18 @@
 # MC Kim - Graphic Designer Portfolio Website
 
-This repository contains the professional portfolio website for **MC Kim**, a Graphic Designer with an MFA and 4+ years of experience in brand identity, visual communication, and digital design.
+This repository contains the professional portfolio website for **MC Kim**, a Graphic Designer with an MFA and 4+ years of experience in brand identity, visual communication, and digital design [cite: 1].
 
 ## Features
 - Fully responsive modern design built with HTML5 & Tailwind CSS.
+- **Interactive Skills Section**: Clickable core competencies and specialties displaying custom sample projects.
+- **Direct Contact Section**: Clean direct display of phone and email info without mailto links.
 - Sections included:
   - Hero Header & Navigation
   - About Me & Summary
   - Professional Experience
-  - Skills & Specialties
+  - Interactive Skills & Specialties Hub
   - Education (MFA)
-  - Interactive Contact Info
+  - Direct Contact Info
 
 ## How to Deploy on GitHub Pages
 
@@ -20,7 +22,7 @@ This repository contains the professional portfolio website for **MC Kim**, a Gr
    ```bash
    git init
    git add .
-   git commit -m "Initial portfolio release"
+   git commit -m "Update portfolio with interactive skills and direct contact"
    git branch -M main
    git remote add origin https://github.com/YOUR_USERNAME/mc-kim-portfolio.git
    git push -u origin main
