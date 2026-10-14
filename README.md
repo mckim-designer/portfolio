@@ -1,22 +1,18 @@
 # Mc Kim — Graphic Design Portfolio
 
-A responsive, modern portfolio website made with plain HTML, CSS, and JavaScript.
+A responsive portfolio website built with HTML, CSS, and JavaScript. It showcases print and digital design services, including flyers, posters, business cards, CVs, brand identity, social media graphics, YouTube thumbnails, video intro/outro graphics, brochures, menus, invitations, and digital ads.
 
 ## Preview locally
-1. Extract the ZIP file.
-2. Open `index.html` in a browser. No build tools are required.
-3. For a more realistic local server, open the folder in VS Code and use the Live Server extension.
+1. Extract this ZIP.
+2. Open `index.html` in a browser.
+3. Keep `index.html`, `styles.css`, and `script.js` together in the same folder.
 
-## Personalize before publishing
-Search `index.html` for these placeholders and replace them:
-- `YOUR_EMAIL@example.com` — your professional email (appears in two places)
-- `YOUR_NUMBER` — WhatsApp number in international format, digits only (for example, country code + number without `+` or spaces)
-- `[Add your WhatsApp number]`
-- `[Add Behance / Instagram / LinkedIn]`
-- `[Add portfolio ...]` or other project placeholders in the About / Work sections
+## Contact details
+- Email: `kimzfinearts@gmail.com`
+- WhatsApp: `+254112611956`
 
-## Important
-The four portfolio cards are illustrative concept projects created for this sample site. Replace them with your own real work before presenting the site as a portfolio of completed client projects. Update descriptions to reflect your actual role and results.
+## Before promoting your portfolio
+The displayed project cards are illustrative concept samples, not claimed client projects. Replace them with your own original designs as you build your portfolio. Video intro/outro service scope should be agreed with each client; the site describes branded screens/title graphics and does not imply a particular animation package.
 
-## Publish
-You can upload the files to GitHub Pages, Netlify, or another static website host. Keep `index.html`, `styles.css`, and `script.js` in the same folder.
+## Publish updates to GitHub Pages
+Upload/replace `index.html`, `styles.css`, `script.js`, and `README.md` in the root of your existing public repository, then commit the changes. GitHub Pages will redeploy automatically.
