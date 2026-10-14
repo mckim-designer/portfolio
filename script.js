@@ -45,3 +45,52 @@ document.querySelectorAll(".placeholder-link").forEach((link) => {
 
 const year = document.querySelector("#year");
 if (year) year.textContent = new Date().getFullYear();
+
+// Accessible selectable dropdowns for Work, About, and Services navigation.
+const dropdownToggles = document.querySelectorAll('.nav-dropdown-toggle');
+function closeDropdowns(except = null) {
+  dropdownToggles.forEach((toggle) => {
+    const menu = document.getElementById(toggle.getAttribute('aria-controls'));
+    if (toggle !== except && menu) {
+      toggle.setAttribute('aria-expanded', 'false');
+      menu.hidden = true;
+    }
+  });
+}
+dropdownToggles.forEach((toggle) => {
+  const menu = document.getElementById(toggle.getAttribute('aria-controls'));
+  if (!menu) return;
+  toggle.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const opening = toggle.getAttribute('aria-expanded') !== 'true';
+    closeDropdowns(toggle);
+    toggle.setAttribute('aria-expanded', String(opening));
+    menu.hidden = !opening;
+  });
+  toggle.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeDropdowns();
+      toggle.focus();
+    }
+  });
+});
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('.nav-dropdown')) closeDropdowns();
+});
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeDropdowns();
+});
+
+document.querySelectorAll('[data-nav-filter]').forEach((link) => {
+  link.addEventListener('click', () => {
+    const filter = link.dataset.navFilter;
+    const targetButton = document.querySelector(`.filter[data-filter="${filter}"]`);
+    if (targetButton) targetButton.click();
+    closeDropdowns();
+  });
+});
+
+// Close the dropdown after selecting a section link, including on mobile.
+document.querySelectorAll('.dropdown-menu a:not([data-nav-filter])').forEach((link) => {
+  link.addEventListener('click', () => closeDropdowns());
+});

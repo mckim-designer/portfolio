@@ -18,7 +18,38 @@
     <a class="wordmark" href="#home" aria-label="Mc Kim home">MK<span>®</span></a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
     <nav class="nav" aria-label="Main navigation">
-      <a href="#work">Work</a><a href="#about">About</a><a href="#services">Services</a><a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="work-menu">Work <span class="dropdown-chevron">⌄</span></button>
+        <div class="dropdown-menu" id="work-menu" hidden>
+          <a href="#work" data-nav-filter="all">All projects</a>
+          <a href="#work" data-nav-filter="branding">Branding</a>
+          <a href="#work" data-nav-filter="digital">Digital designs</a>
+          <a href="#work" data-nav-filter="video">Video graphics</a>
+          <a href="#work" data-nav-filter="print">Print designs</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="about-menu">About <span class="dropdown-chevron">⌄</span></button>
+        <div class="dropdown-menu" id="about-menu" hidden>
+          <a href="#about-intro">About Mc Kim</a>
+          <a href="#about-education">Education</a>
+          <a href="#about-focus">Design focus</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="services-menu">Services <span class="dropdown-chevron">⌄</span></button>
+        <div class="dropdown-menu dropdown-menu-wide" id="services-menu" hidden>
+          <a href="#service-flyers">Flyers & posters</a>
+          <a href="#service-branding">Logo & brand identity</a>
+          <a href="#service-social">Social media designs</a>
+          <a href="#service-video">Video intros & outros</a>
+          <a href="#service-thumbnails">YouTube thumbnails</a>
+          <a href="#service-resumes">Resume / CV creation</a>
+          <a href="#service-print">Brochures, menus & print</a>
+          <a href="#service-digital">Digital ads & cover art</a>
+        </div>
+      </div>
+      <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
     </nav>
   </header>
 
@@ -49,7 +80,7 @@
     <section class="work section-wrap" id="work">
       <div class="section-heading"><div><p class="eyebrow">01 / SELECTED PROJECTS</p><h2>Work that <span>speaks.</span></h2></div><p class="section-note">A selection of visual concepts across digital, motion, branding, and print.<br><strong>Concept samples — replace with client work as you build it.</strong></p></div>
       <div class="filters" role="group" aria-label="Filter projects">
-        <button class="filter active" data-filter="all" aria-pressed="true">All projects <span>06</span></button>
+        <button class="filter active" data-filter="all" aria-pressed="true">All projects <span>12</span></button>
         <button class="filter" data-filter="branding">Branding</button><button class="filter" data-filter="digital">Digital</button><button class="filter" data-filter="video">Video graphics</button><button class="filter" data-filter="print">Print</button>
       </div>
       <div class="project-grid">
@@ -77,30 +108,54 @@
           <a href="#contact" class="project-image image-motion" aria-label="Ask about a video intro and outro graphics concept"><span class="project-number">06 / CONCEPT</span><div class="motion-orbit"></div><div class="motion-word">YOUR<br><em>STORY.</em></div><span class="motion-tag">INTRO / OUTRO FRAME</span></a>
           <div class="project-meta"><div><h3>Motion Identity</h3><p>Video intro & outro · Title graphics</p></div><span class="arrow-round">↗</span></div>
         </article>
+        <article class="project-card" data-category="print">
+          <a href="#contact" class="project-image image-flyer" aria-label="Sample event flyer design concept"><span class="project-number">07 / CONCEPT</span><span class="flyer-kicker">ONE NIGHT ONLY</span><div class="flyer-title">AFRO<br><em>FUSION</em></div><div class="flyer-sun"></div><span class="flyer-foot">MUSIC · FOOD · CULTURE / 7 PM</span></a>
+          <div class="project-meta"><div><h3>Afro Fusion</h3><p>Event flyer · Digital promotion</p></div><span class="arrow-round">↗</span></div>
+        </article>
+        <article class="project-card" data-category="branding">
+          <a href="#contact" class="project-image image-card" aria-label="Sample business card design concept"><span class="project-number">08 / CONCEPT</span><div class="business-card-front"><span>MK<span class="mini-reg">®</span></span><small>CREATIVE STUDIO</small><b>IDEAS MADE VISIBLE.</b></div><div class="business-card-back"><b>MC KIM</b><small>GRAPHIC DESIGNER</small><i>kimzfinearts@gmail.com</i><i>+254 112 611 956</i></div><span class="card-caption">BUSINESS CARD SYSTEM</span></a>
+          <div class="project-meta"><div><h3>MK Creative Studio</h3><p>Business cards · Brand stationery</p></div><span class="arrow-round">↗</span></div>
+        </article>
+        <article class="project-card" data-category="print">
+          <a href="#contact" class="project-image image-resume" aria-label="Sample professional resume layout concept"><span class="project-number">09 / CONCEPT</span><div class="resume-sheet"><div class="resume-top"><b>YOUR NAME</b><span>CREATIVE PROFESSIONAL</span></div><div class="resume-columns"><div><i></i><i></i><i></i><i></i><strong>SKILLS</strong><i></i><i></i><i></i></div><div><strong>PROFILE</strong><i></i><i></i><i></i><strong>EXPERIENCE</strong><i></i><i></i><i></i><strong>EDUCATION</strong><i></i><i></i></div></div></div><span class="resume-caption">CLEAN CV / RESUME DESIGN</span></a>
+          <div class="project-meta"><div><h3>Career Ready</h3><p>Resume / CV · Document design</p></div><span class="arrow-round">↗</span></div>
+        </article>
+        <article class="project-card" data-category="digital">
+          <a href="#contact" class="project-image image-social" aria-label="Sample social media campaign design concept"><span class="project-number">10 / CONCEPT</span><div class="social-post"><small>GLOW LAB / SKINCARE</small><b>YOUR<br><em>GLOW</em><br>ERA.</b><span>NEW SEASON. NEW ROUTINE.</span></div><div class="social-orb"></div><span class="social-caption">SOCIAL MEDIA CAMPAIGN</span></a>
+          <div class="project-meta"><div><h3>Glow Lab</h3><p>Social media post · Campaign creative</p></div><span class="arrow-round">↗</span></div>
+        </article>
+        <article class="project-card" data-category="digital">
+          <a href="#contact" class="project-image image-cover" aria-label="Sample podcast and music cover art concept"><span class="project-number">11 / CONCEPT</span><div class="cover-orbit"></div><div class="cover-title">AFTER<br><em>HOURS</em></div><span class="cover-subtitle">A PLAYLIST FOR THE IN-BETWEEN</span><span class="cover-sticker">SIDE A<br>001</span></a>
+          <div class="project-meta"><div><h3>After Hours</h3><p>Music cover art · Digital artwork</p></div><span class="arrow-round">↗</span></div>
+        </article>
+        <article class="project-card" data-category="video">
+          <a href="#contact" class="project-image image-outro" aria-label="Sample video outro and end screen concept"><span class="project-number">12 / CONCEPT</span><div class="outro-ring"></div><div class="outro-title">THANKS<br><em>FOR WATCHING</em></div><div class="outro-boxes"><span>WATCH NEXT</span><span>SUBSCRIBE +</span></div><span class="outro-caption">VIDEO OUTRO / END SCREEN</span></a>
+          <div class="project-meta"><div><h3>Next Up</h3><p>Video outro · YouTube end screen</p></div><span class="arrow-round">↗</span></div>
+        </article>
       </div>
       <p class="disclaimer">Portfolio note: the projects above are illustrative design concepts, not claimed client work. Replace them with original projects before publishing.</p>
     </section>
 
     <section class="about section-wrap" id="about">
       <div class="about-mark">MK<span>®</span></div>
-      <div class="about-copy"><p class="eyebrow">02 / A LITTLE ABOUT ME</p><h2>Curious mind.<br><span>Design-first</span> thinking.</h2><p class="about-text">I’m Mc Kim, a freelance graphic designer who enjoys turning ideas into clear, memorable visual stories. I bring a thoughtful approach to layout, typography, color, and visual identity—helping people communicate what makes their brand different.</p><p class="about-text">My goal is simple: make work that looks good, works hard, and feels true to the people behind it.</p><a class="text-link" href="#contact">Let's make something meaningful <span>↗</span></a></div>
-      <div class="about-facts"><div><span>BASED IN</span><strong>Nandi County, Kenya</strong></div><div><span>EDUCATION</span><strong>MFA, Art / Art Studies</strong><small>Graphic Era Hill University · 2020–2023</small></div><div><span>FOCUS</span><strong>Branding / Digital / Print</strong></div></div>
+      <div class="about-copy" id="about-intro"><p class="eyebrow">02 / A LITTLE ABOUT ME</p><h2>Curious mind.<br><span>Design-first</span> thinking.</h2><p class="about-text">I’m Mc Kim, a freelance graphic designer who enjoys turning ideas into clear, memorable visual stories. I bring a thoughtful approach to layout, typography, color, and visual identity—helping people communicate what makes their brand different.</p><p class="about-text">My goal is simple: make work that looks good, works hard, and feels true to the people behind it.</p><a class="text-link" href="#contact">Let's make something meaningful <span>↗</span></a></div>
+      <div class="about-facts"><div><span>BASED IN</span><strong>Nandi County, Kenya</strong></div><div id="about-education"><span>EDUCATION</span><strong>MFA, Art / Art Studies</strong><small>Graphic Era Hill University · 2020–2023</small></div><div id="about-focus"><span>FOCUS</span><strong>Branding / Digital / Print</strong></div></div>
     </section>
 
     <section class="services section-wrap" id="services">
       <div class="section-heading"><div><p class="eyebrow">03 / WHAT I CAN DO</p><h2>Good ideas,<br><span>well designed.</span></h2></div><p class="section-note">Design services for individuals, events, small businesses, and growing brands.</p></div>
       <div class="service-list">
-        <article><span class="service-index">01</span><div><h3>Flyer design</h3><p>Eye-catching promotional flyers for businesses, products, events, offers, and announcements—designed for print or digital sharing.</p></div><span class="service-arrow">↗</span></article>
+        <article id="service-flyers"><span class="service-index">01</span><div><h3>Flyer design</h3><p>Eye-catching promotional flyers for businesses, products, events, offers, and announcements—designed for print or digital sharing.</p></div><span class="service-arrow">↗</span></article>
         <article><span class="service-index">02</span><div><h3>Poster design</h3><p>Bold, readable posters for events, campaigns, promotions, and community announcements that help your message stand out.</p></div><span class="service-arrow">↗</span></article>
         <article><span class="service-index">03</span><div><h3>Business card design</h3><p>Professional business cards with clean layouts and consistent branding, ready to send to your printer.</p></div><span class="service-arrow">↗</span></article>
-        <article><span class="service-index">04</span><div><h3>Resume / CV creation</h3><p>Well-structured, professional resumes and CVs with clear formatting to help present your experience, skills, and qualifications.</p></div><span class="service-arrow">↗</span></article>
-        <article><span class="service-index">05</span><div><h3>Logo design & brand identity</h3><p>Logo concepts, color palettes, typography, and brand elements to help businesses build a recognizable, consistent identity.</p></div><span class="service-arrow">↗</span></article>
-        <article><span class="service-index">06</span><div><h3>Social media designs</h3><p>Instagram posts, stories, Facebook graphics, carousel posts, promotional banners, and campaign visuals sized for digital platforms.</p></div><span class="service-arrow">↗</span></article>
-        <article><span class="service-index">07</span><div><h3>YouTube thumbnails & channel graphics</h3><p>High-impact video thumbnails, channel banners, and supporting graphics designed to communicate the topic quickly and attract attention.</p></div><span class="service-arrow">↗</span></article>
-        <article><span class="service-index">08</span><div><h3>Video intros, outros & title cards</h3><p>Branded opening and ending screens, title cards, end screens, and simple motion-graphic assets for videos. Animation scope can be agreed before work begins.</p></div><span class="service-arrow">↗</span></article>
-        <article><span class="service-index">09</span><div><h3>Brochures, menus & catalogues</h3><p>Organized multi-page layouts for product lists, restaurant menus, service brochures, event programmes, and small catalogues.</p></div><span class="service-arrow">↗</span></article>
+        <article id="service-resumes"><span class="service-index">04</span><div><h3>Resume / CV creation</h3><p>Well-structured, professional resumes and CVs with clear formatting to help present your experience, skills, and qualifications.</p></div><span class="service-arrow">↗</span></article>
+        <article id="service-branding"><span class="service-index">05</span><div><h3>Logo design & brand identity</h3><p>Logo concepts, color palettes, typography, and brand elements to help businesses build a recognizable, consistent identity.</p></div><span class="service-arrow">↗</span></article>
+        <article id="service-social"><span class="service-index">06</span><div><h3>Social media designs</h3><p>Instagram posts, stories, Facebook graphics, carousel posts, promotional banners, and campaign visuals sized for digital platforms.</p></div><span class="service-arrow">↗</span></article>
+        <article id="service-thumbnails"><span class="service-index">07</span><div><h3>YouTube thumbnails & channel graphics</h3><p>High-impact video thumbnails, channel banners, and supporting graphics designed to communicate the topic quickly and attract attention.</p></div><span class="service-arrow">↗</span></article>
+        <article id="service-video"><span class="service-index">08</span><div><h3>Video intros, outros & title cards</h3><p>Branded opening and ending screens, title cards, end screens, and simple motion-graphic assets for videos. Animation scope can be agreed before work begins.</p></div><span class="service-arrow">↗</span></article>
+        <article id="service-print"><span class="service-index">09</span><div><h3>Brochures, menus & catalogues</h3><p>Organized multi-page layouts for product lists, restaurant menus, service brochures, event programmes, and small catalogues.</p></div><span class="service-arrow">↗</span></article>
         <article><span class="service-index">10</span><div><h3>Invitations & event graphics</h3><p>Wedding and party invitations, event announcements, certificates, tickets, and matching digital or print-ready graphics.</p></div><span class="service-arrow">↗</span></article>
-        <article><span class="service-index">11</span><div><h3>Digital ads, web banners & cover art</h3><p>Promotional ad creatives, website banners, presentation covers, podcast or music cover artwork, and campaign assets for online use.</p></div><span class="service-arrow">↗</span></article>
+        <article id="service-digital"><span class="service-index">11</span><div><h3>Digital ads, web banners & cover art</h3><p>Promotional ad creatives, website banners, presentation covers, podcast or music cover artwork, and campaign assets for online use.</p></div><span class="service-arrow">↗</span></article>
       </div>
     </section>
 
