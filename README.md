@@ -1,11 +1,30 @@
-# Mc Kim — Interactive Services Portfolio
-Files: `index.html`, `style.css`, `script.js`.
+# MC Kim - Graphic Designer Portfolio Website
 
-Upload all three files to the root of your GitHub Pages repository, replacing old versions, then commit changes. The site has 11 clickable services, each with two interactive sample directions and a Gmail compose request button.
+This repository contains the professional portfolio website for **MC Kim**, a Graphic Designer with an MFA and 4+ years of experience in brand identity, visual communication, and digital design.
 
-The email is configured in `script.js` as `kimzfinearts@gmail.com`. General email links use the subject `I have work for you`; modal request buttons use `Request for [Service Name]` and prefill the service and sample in the email body.
+## Features
+- Fully responsive modern design built with HTML5 & Tailwind CSS.
+- Sections included:
+  - Hero Header & Navigation
+  - About Me & Summary
+  - Professional Experience
+  - Skills & Specialties
+  - Education (MFA)
+  - Interactive Contact Info
 
-The sample visuals are self-contained CSS mockups rather than external image files. Replace the email constant if needed.
+## How to Deploy on GitHub Pages
 
-## Original artwork assets
-The `images/` directory contains 22 original SVG vector design studies (two per service). The modal loads the matching SVG for the selected service and sample. Upload the entire `images` folder along with the three website files to your GitHub Pages repository.
+1. **Unzip** this project on your computer.
+2. Create a new repository on [GitHub.com](https://github.com) (e.g., `mc-kim-portfolio`).
+3. Push all files (`index.html`, `README.md`, `.gitignore`) to your repository:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial portfolio release"
+   git branch -M main
+   git remote add origin https://github.com/YOUR_USERNAME/mc-kim-portfolio.git
+   git push -u origin main
+   ```
+4. Go to **Settings** > **Pages** in your repository on GitHub.
+5. Under **Build and deployment** > **Branch**, select `main` and save.
+6. Your website will be live in a few minutes at `https://YOUR_USERNAME.github.io/mc-kim-portfolio/`!

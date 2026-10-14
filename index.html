@@ -1,23 +1,206 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f4f2ec"><meta name="description" content="Graphic design services by Mc Kim.">
-<title>Mc Kim — Graphic Design Services</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC Kim | Graphic Designer Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-<div class="announcement"><span>AVAILABLE FOR SELECT FREELANCE PROJECTS</span><span>NANDI COUNTY, KENYA ↗</span></div>
-<header class="header"><a class="brand" href="#top"><b>MK</b> Mc Kim<span>.</span></a><nav class="desktop-nav"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav><a class="cta gmail-link" data-subject="I have work for you" href="#">Let's talk ↗</a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button></header>
-<nav class="mobile-nav" hidden><a href="#services">Services ↘</a><a href="#about">About ↘</a><a href="#contact">Contact ↘</a><a class="gmail-link" data-subject="I have work for you" href="#">Let's talk ↗</a></nav>
-<main id="top">
-<section class="hero wrap"><div><p class="eyebrow">— INDEPENDENT GRAPHIC DESIGNER</p><h1>Good design.<br><span>Clear purpose.</span></h1><p class="intro">I turn ideas into thoughtful visual experiences — from bold brand identities to digital content that gets noticed.</p><a class="underlink" href="#services">Explore what I do ↓</a></div><div class="hero-art"><small>DESIGN WITH INTENTION <span>MK—001</span></small><div class="orbit"></div><div class="disc"></div><div class="art-title">MAKE<br>IT <i>MATTER.</i></div><b class="asterisk">✳</b><small class="art-bottom">IDEAS / FORM / IMPACT <span>2026 ©</span></small></div></section>
-<div class="ticker"><div>BRAND IDENTITY ✳ DIGITAL DESIGN ✳ PRINT & EDITORIAL ✳ VIDEO GRAPHICS ✳ BRAND IDENTITY ✳ DIGITAL DESIGN ✳ PRINT & EDITORIAL ✳ VIDEO GRAPHICS ✳</div></div>
-<section class="services wrap" id="services"><div class="section-heading"><div><p class="eyebrow">— SERVICES / WHAT I CAN DO</p><h2>What do you<br>need designed<span>?</span></h2></div><p>Choose a service to explore two visual directions. Found a style you like? Request a project directly from the preview.</p></div><div id="services-list"></div><p class="note">✳ Every project is tailored to your brief, audience, and goals.</p></section>
-<section class="about" id="about"><div class="wrap about-grid"><div><p class="eyebrow">— A LITTLE ABOUT ME</p><h2>Thoughtful work.<br><span>Made with purpose.</span></h2></div><div><p>I’m Mc Kim, a freelance graphic designer based in Nandi County, Kenya. I help people and businesses communicate clearly through distinctive, considered design.</p><p>My approach combines visual curiosity with practical thinking — making sure every design looks good and works hard for the people it’s made for.</p><hr><small>BASED IN</small><b>Nandi County, Kenya</b><small>EDUCATION</small><b>Graphic Era Hill University · MFA, Art/Art Studies</b></div></div></section>
-<section class="contact wrap" id="contact"><p class="eyebrow">— HAVE SOMETHING IN MIND?</p><div class="contact-row"><h2>Let’s make<br>something <em>great.</em></h2><a class="contact-cta gmail-link" data-subject="I have work for you" href="#">I have work for you ↗</a></div><div class="contact-bottom"><span>MC KIM · INDEPENDENT DESIGNER</span><a class="gmail-link" data-subject="I have work for you" href="#">KIMZFINEARTS@GMAIL.COM ↗</a></div></section>
-</main><footer>© <span id="year"></span> MC KIM <span>DESIGNED WITH INTENTION.</span><a href="#top">BACK TO TOP ↑</a></footer>
-<div class="backdrop" id="service-modal" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="close" aria-label="Close preview">×</button><div class="modal-top"><span id="modal-number">SERVICE 01</span><span>VISUAL DIRECTIONS / 02</span></div><div class="modal-heading"><div><p class="eyebrow">SERVICE PREVIEW</p><h2 id="modal-title">Flyer design</h2></div><p id="modal-description"></p></div><div class="tabs" role="tablist"><button class="tab active" role="tab" id="tab-1" aria-selected="true" data-sample="0">Sample 1 ↗</button><button class="tab" role="tab" id="tab-2" aria-selected="false" data-sample="1">Sample 2 ↗</button></div><div id="sample-panel" role="tabpanel" aria-labelledby="tab-1"><div class="preview" id="preview"><img id="preview-image" src="images/service-01-sample-1.svg" alt="Original flyer design sample 1"><div class="preview-index">ORIGINAL DESIGN STUDY <span id="preview-index">01</span></div></div><div class="caption"><div><small>CURRENT DIRECTION</small><h3 id="sample-title">01 — Bold & expressive</h3></div><p id="sample-description"></p></div></div><div class="modal-footer"><p>Like this direction? Tell me what you have in mind.</p><a class="request" id="request-project" href="#" target="_blank" rel="noopener noreferrer">Request Similar Project <b>→</b></a></div></section></div>
-</body></html>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-wider text-white">MC<span class="text-indigo-400">.</span>KIM</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition">About</a>
+                <a href="#experience" class="hover:text-indigo-400 transition">Experience</a>
+                <a href="#skills" class="hover:text-indigo-400 transition">Skills</a>
+                <a href="#education" class="hover:text-indigo-400 transition">Education</a>
+                <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+            </nav>
+            <a href="mailto:kimzfinearts@gmail.com" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-medium bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition shadow-lg shadow-indigo-600/20">
+                Let's Talk
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
+        <!-- Glow background effect -->
+        <div class="absolute w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl -top-10 -left-10 pointer-events-none"></div>
+        <div class="absolute w-96 h-96 bg-purple-600/10 rounded-full blur-3xl bottom-10 right-10 pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-indigo-950 border border-indigo-800 text-indigo-300 text-xs font-semibold uppercase tracking-widest mb-6">
+                Graphic Designer & Brand Specialist
+            </span>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight mb-6">
+                Communicating visually <br class="hidden sm:inline">through <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">impactful design.</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Graphic designer with an MFA and 4+ years of experience crafting brand concepts, marketing materials, and digital content.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 text-base font-semibold bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl transition shadow-lg shadow-indigo-600/30">
+                    Get in Touch
+                </a>
+                <a href="#experience" class="w-full sm:w-auto px-8 py-4 text-base font-semibold bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 rounded-xl transition">
+                    View Experience
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Summary Section -->
+    <section id="about" class="py-24 px-6 border-t border-slate-900 bg-slate-900/30">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-6 flex items-center gap-3">
+                <span class="text-indigo-400">01.</span> About Me
+            </h2>
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-xl">
+                <p class="text-slate-300 text-lg leading-relaxed mb-6">
+                    Graphic designer with an MFA and 4+ years of experience creating brand concepts, marketing materials, and digital content for clients across a wide range of industries. 
+                </p>
+                <p class="text-slate-400 leading-relaxed">
+                    I help businesses communicate visually through design—ranging from full logo systems to dynamic social campaigns—carefully balancing creative concepts with production requirements to achieve real business outcomes. Based in Nandi County, Kenya, available for global freelance and remote contracts.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 px-6 border-t border-slate-900">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-12 flex items-center gap-3">
+                <span class="text-indigo-400">02.</span> Professional Experience
+            </h2>
+            
+            <div class="border-l-2 border-indigo-500/30 pl-6 ml-2 space-y-12">
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-indigo-500 border-4 border-slate-950"></div>
+                    
+                    <span class="text-sm font-semibold text-indigo-400 tracking-wide uppercase">Sep 2023 – Present</span>
+                    <h3 class="text-xl font-bold text-white mt-1">Professional Freelance Graphic Designer</h3>
+                    <p class="text-slate-400 text-sm mb-4">Freelance</p>
+                    
+                    <ul class="space-y-3 text-slate-300 text-sm sm:text-base">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-indigo-400 mt-1"></i>
+                            <span>Develop visual concepts and branded assets for multiple clients across various industries, translating design briefs into outcome-driven solutions.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-indigo-400 mt-1"></i>
+                            <span>Create brand-consistent digital and print materials (social graphics, marketing assets, web elements) using Adobe Illustrator, InDesign, and Photoshop.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-indigo-400 mt-1"></i>
+                            <span>Collaborate closely with clients to shape briefs, present creative concepts, iterate on feedback, and deliver final production-ready or web-optimized files on schedule.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-indigo-400 mt-1"></i>
+                            <span>Manage competing project priorities and deadlines with strict attention to detail and high design quality standards.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6 border-t border-slate-900 bg-slate-900/30">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-12 flex items-center gap-3">
+                <span class="text-indigo-400">03.</span> Skills & Expertise
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Design Tools -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-lg">
+                    <div class="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center text-indigo-400 text-xl mb-4">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">Design Tools</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Adobe Photoshop, Adobe Illustrator, Adobe InDesign, Canva, Figma.
+                    </p>
+                </div>
+
+                <!-- Core Competencies -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-lg">
+                    <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-400 text-xl mb-4">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">Core Competencies</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Brand identity, Typography, Layout design, Digital media, Print-ready design, Design concepts.
+                    </p>
+                </div>
+
+                <!-- Specialties -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-lg">
+                    <div class="w-12 h-12 bg-pink-500/10 rounded-xl flex items-center justify-center text-pink-400 text-xl mb-4">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">Specialties</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Logo design, Social media graphics, Marketing materials, Visual communication.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-24 px-6 border-t border-slate-900">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-12 flex items-center gap-3">
+                <span class="text-indigo-400">04.</span> Education
+            </h2>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div>
+                    <span class="text-sm font-semibold text-indigo-400 tracking-wide uppercase">Sep 2020 – Sep 2023</span>
+                    <h3 class="text-xl font-bold text-white mt-1">Master of Fine Arts (MFA) - Art / Art Studies, General</h3>
+                    <p class="text-slate-400 text-sm mt-1">Graphic Era Hill University – Dehradun, Uttarakhand</p>
+                </div>
+                <div class="bg-indigo-950/60 border border-indigo-800/50 px-4 py-2 rounded-xl text-indigo-300 text-sm font-medium">
+                    Postgraduate Degree
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 border-t border-slate-900 bg-slate-900/30">
+        <div class="max-w-3xl mx-auto text-center">
+            <span class="text-indigo-400 text-sm font-semibold uppercase tracking-widest mb-3 block">What's Next?</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">Let's Work Together</h2>
+            <p class="text-slate-400 text-lg mb-10 max-w-xl mx-auto">
+                Have a project in mind or looking for a professional graphic designer to bring your brand vision to life? Get in touch!
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="mailto:kimzfinearts@gmail.com" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition shadow-lg shadow-indigo-600/30 flex items-center gap-3">
+                    <i class="fa-solid fa-envelope"></i> kimzfinearts@gmail.com
+                </a>
+                <a href="tel:+254112611956" class="px-8 py-4 bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 font-semibold rounded-xl transition flex items-center gap-3">
+                    <i class="fa-solid fa-phone"></i> +254 112 611 956
+                </a>
+            </div>
+            
+            <div class="mt-8 text-slate-500 text-sm">
+                <i class="fa-solid fa-location-dot mr-1"></i> Nandi County, Kenya
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-900 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 MC Kim. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
